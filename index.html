@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="searchBar">
+      <input
+        type="text"
+        autofocus
+        autocomplete="off"
+        placeholder="Location"
+        id="searchInput"
+      />
+      <button id="searchBtn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="weatherInfo">
+      <div class="mainInfo">
+        <div class="city"></div>
+        <div class="weather"></div>
+        <div class="temperature"></div>
+      </div>
+      <div class="infoCont">
+        <div class="info">Wind</div>
+        <div class="wind data"></div>
+        <i class="fas fa-wind"></i>
+      </div>
+      <div class="infoCont">
+        <div class="info">Humidity</div>
+        <div class="humidity data">Wind</div>
+        <i class="fas fa-tint"></i>
+      </div>
+      <div class="infoCont">
+        <div class="info">Feels Like</div>
+        <div class="feelsLike data"></div>
+        <i class="fas fa-thermometer-half"></i>
+      </div>
+      <div class="infoCont">
+        <div class="info">Minimum Temperature</div>
+        <div class="tempMin data"></div>
+        <i class="fas fa-temperature-low"></i>
+      </div>
+      <div class="infoCont">
+        <div class="info">Maximum Temperature</div>
+        <div class="tempMax data"></div>
+        <i class="fas fa-temperature-high"></i>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
