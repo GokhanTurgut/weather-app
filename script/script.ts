@@ -74,7 +74,7 @@ function backgroundSelecter(weatherMain: string) {
 }
 
 function bodyBackgroundChanger(weather: string) {
-  body.style.backgroundImage = `url(../images/${weather}.jpg)`;
+  body.style.backgroundImage = `url(images/${weather}.jpg)`;
 }
 
 function capitalizeFirstLetter(string: string) {
