@@ -1,3 +1,4 @@
+const body = document.getElementById("body");
 const city = document.querySelector(".city");
 const temperature = document.querySelector(".temperature");
 const feelsLike = document.querySelector(".feelsLike");
@@ -38,6 +39,42 @@ function displayData(data: object) {
   humidity.innerText = `${Math.round(data.main.humidity)} %`;
   wind.innerText = `${Math.round(data.wind.speed * 3.6)} km/h`;
   weather.innerText = beutifyString(data.weather[0].description);
+}
+
+function backgroundSelecter(weatherMain: string) {
+  switch (weatherMain) {
+    case "Thunderstorm":
+      bodyBackgroundChanger("thunderstorm");
+      break;
+
+    case "Drizzle":
+      bodyBackgroundChanger("drizzle");
+      break;
+
+    case "Rain":
+      bodyBackgroundChanger("rain");
+      break;
+
+    case "Snow":
+      bodyBackgroundChanger("snow");
+      break;
+
+    case "Clear":
+      bodyBackgroundChanger("clear");
+      break;
+
+    case "Clouds":
+      bodyBackgroundChanger("clouds");
+      break;
+
+    default:
+      bodyBackgroundChanger("night");
+      break;
+  }
+}
+
+function bodyBackgroundChanger(weather: string) {
+  body.style.backgroundImage = `url(../images/${weather}.jpg)`;
 }
 
 function capitalizeFirstLetter(string: string) {

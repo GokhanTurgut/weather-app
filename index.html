@@ -13,22 +13,26 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <div class="searchBar">
-      <input
-        type="text"
-        autofocus
-        autocomplete="off"
-        placeholder="Location"
-        id="searchInput"
-      />
-      <button id="searchBtn"><i class="fas fa-search"></i></button>
+  <body id="body">
+    <div class="searchArea">
+      <div class="searchBar">
+        <input
+          type="text"
+          autofocus
+          autocomplete="off"
+          placeholder="Location"
+          id="searchInput"
+        />
+        <button id="searchBtn"><i class="fas fa-search"></i></button>
+      </div>
     </div>
     <div class="weatherInfo">
       <div class="mainInfo">
-        <div class="city"></div>
-        <div class="weather"></div>
-        <div class="temperature"></div>
+        <div class="mainCont">
+          <div class="city"></div>
+          <div class="weather"></div>
+          <div class="temperature"></div>
+        </div>
       </div>
       <div class="infoCont">
         <div class="info">Wind</div>
