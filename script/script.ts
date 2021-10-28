@@ -39,6 +39,7 @@ function displayData(data: object) {
   humidity.innerText = `${Math.round(data.main.humidity)} %`;
   wind.innerText = `${Math.round(data.wind.speed * 3.6)} km/h`;
   weather.innerText = beutifyString(data.weather[0].description);
+  backgroundSelecter(data.weather[0].main);
 }
 
 function backgroundSelecter(weatherMain: string) {
@@ -74,7 +75,7 @@ function backgroundSelecter(weatherMain: string) {
 }
 
 function bodyBackgroundChanger(weather: string) {
-  body.style.backgroundImage = `url(images/${weather}.jpg)`;
+  body.style.backgroundImage = `url(./images/${weather}.jpg)`;
 }
 
 function capitalizeFirstLetter(string: string) {
